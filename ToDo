@@ -1,0 +1,4 @@
+1. Similar to this - https://github.com/JooZef315/football-tracking-data-from-TV-broadcast
+      - Pretrained Yolo V5 to highlight player and ball bounding box from broadcast feeds
+      - Use the Simple Online and Realtime Tracking with a Deep Association Metric (Deep SORT) to improve object tracking
+      - USe the resnet training to project TV sports field images onto 2D plane to get true tracking data - https://github.com/vcg-uvic/sportsfield_release?tab=readme-ov-file
