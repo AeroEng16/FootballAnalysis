@@ -1,9 +1,10 @@
 1. Similar to this - https://github.com/JooZef315/football-tracking-data-from-TV-broadcast
-      - Pretrained Yolo V5 to highlight player and ball bounding box from broadcast feeds
+       - Take pretrained Yolo5 and retrain on custom dataset
+            - https://blog.roboflow.com/track-football-players/
       - Use the Simple Online and Realtime Tracking with a Deep Association Metric (Deep SORT) to improve object tracking
-      - USe the resnet training to project TV sports field images onto 2D plane to get true tracking data - https://github.com/vcg-uvic/sportsfield_release?tab=readme-ov-file
+      - Use the resnet training to project TV sports field images onto 2D plane to get true tracking data - https://github.com/vcg-uvic/sportsfield_release?tab=readme-ov-file
             OR
-      - Use the method from https://www.youtube.com/watch?v=neBZ6huolkg (likely not as robust)
+      
 2. Compare to tracking data from skillcorner if I can find the broadcast feeds from these matches https://github.com/SkillCorner/opendata
       3518 Inter - Juventus - https://www.youtube.com/watch?v=PEvflD64RnE
       3442 - Barca - Real - https://www.youtube.com/watch?v=XlQe5-zb3dY&list=PLKj1QUtwqLN9FO6P8yIWMxACN3mnHDM6a&index=12
