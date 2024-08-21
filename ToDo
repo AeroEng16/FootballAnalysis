@@ -1,6 +1,9 @@
 1. Similar to this - https://github.com/JooZef315/football-tracking-data-from-TV-broadcast
        - Take pretrained Yolo5 and retrain on custom dataset
             - https://blog.roboflow.com/track-football-players/
+                     - Don't bother with GK, ref etc. just get all people and then can split detected based on k-means
+            - Might need a different model for the football itself
+       - https://github.com/Mostafa-Nafie/Football-Object-Detection - example of using k-means clustering
       - Use the Simple Online and Realtime Tracking with a Deep Association Metric (Deep SORT) to improve object tracking
       - Use the resnet training to project TV sports field images onto 2D plane to get true tracking data - https://github.com/vcg-uvic/sportsfield_release?tab=readme-ov-file
             OR
