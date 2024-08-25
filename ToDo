@@ -9,7 +9,8 @@ BALL DETECTION
 - Need to find way to improve ball detection
    - Try SAHI - https://learnopencv.com/slicing-aided-hyper-inference/
        https://github.com/obss/sahi?tab=readme-ov-file
-       https://github.com/obss/sahi/blob/main/docs/coco.md
+       https://github.com/obss/sahi/blob/main/docs/
+
    - First step would be to take the test data on footballs and create code to split up and move labels with it. (SAHI library do this?)
    - Might need to improve image resolution after slicing 
        - could try this - https://arxiv.org/html/2402.00163v1#S5
