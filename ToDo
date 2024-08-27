@@ -14,6 +14,7 @@ BALL DETECTION
    - Might need to improve image resolution after slicing 
        - could try this - https://arxiv.org/html/2402.00163v1#S5
    - How best to deal with imbalanced data after slicing (lots more examples without ball than with)
+       https://arxiv.org/abs/1708.02002 - Focal loss
                             - 
 
        - https://github.com/Mostafa-Nafie/Football-Object-Detection - example of using k-means clustering
