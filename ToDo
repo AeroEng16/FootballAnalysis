@@ -6,14 +6,9 @@
 BALL DETECTION
 - need a different model for the football itself
    https://www.mdpi.com/1424-8220/23/21/8693
-- Need to find way to improve ball detection
-   - Try SAHI - https://learnopencv.com/slicing-aided-hyper-inference/
-       https://github.com/obss/sahi?tab=readme-ov-file
-       https://github.com/obss/sahi/blob/main/docs/
-
-   - Might need to improve image resolution after slicing 
-       - could try this - https://arxiv.org/html/2402.00163v1#S5
-   - How best to deal with imbalanced data after slicing (lots more examples without ball than with)
+- SAHI has drastically improved ball tracking, need to add possibly RNN wrapper to get better ball tracking
+       https://arxiv.org/pdf/1705.06368
+  - How best to deal with imbalanced data after slicing (lots more examples without ball than with)
        https://arxiv.org/abs/1708.02002 - Focal loss
        https://datasciencedojo.com/blog/techniques-to-handle-imbalanced-data/
                             - 
