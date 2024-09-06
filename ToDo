@@ -16,6 +16,7 @@ BALL DETECTION
        - https://github.com/Mostafa-Nafie/Football-Object-Detection - example of using k-means clustering
       - Use the Simple Online and Realtime Tracking with a Deep Association Metric (Deep SORT) to improve object tracking
       - Use the resnet training to project TV sports field images onto 2D plane to get true tracking data - https://github.com/vcg-uvic/sportsfield_release?tab=readme-ov-file
+       example usage https://github.com/vcg-uvic/sportsfield_release/blob/master/sports_field_registration.ipynb
             OR
       
 2. Compare to tracking data from skillcorner if I can find the broadcast feeds from these matches https://github.com/SkillCorner/opendata
