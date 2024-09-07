@@ -14,7 +14,9 @@ BALL DETECTION
        https://arxiv.org/abs/1708.02002 - Focal loss
        https://datasciencedojo.com/blog/techniques-to-handle-imbalanced-data/
   - Homography to convert detections to real life location on pitch
-          https://ieeexplore.ieee.org/document/10053962
+                 https://ieeexplore.ieee.org/document/10053962
+          less detail xplanation but might be useful
+              https://stackoverflow.com/questions/60352448/homography-from-football-soccer-field-lines
 
       
 2. Compare to tracking data from skillcorner if I can find the broadcast feeds from these matches https://github.com/SkillCorner/opendata
