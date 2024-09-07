@@ -2,6 +2,8 @@
        - Take pretrained Yolo5 and retrain on custom dataset
             - https://blog.roboflow.com/track-football-players/
                      - Don't bother with GK, ref etc. just get all people and then can split detected based on k-means
+       - https://github.com/Mostafa-Nafie/Football-Object-Detection - example of using k-means clustering
+      - Use the Simple Online and Realtime Tracking with a Deep Association Metric (Deep SORT) to improve object tracking
 
 BALL DETECTION
 - need a different model for the football itself
@@ -11,13 +13,9 @@ BALL DETECTION
   - How best to deal with imbalanced data after slicing (lots more examples without ball than with)
        https://arxiv.org/abs/1708.02002 - Focal loss
        https://datasciencedojo.com/blog/techniques-to-handle-imbalanced-data/
-                            - 
+  - Homography to convert detections to real life location on pitch
+          https://ieeexplore.ieee.org/document/10053962
 
-       - https://github.com/Mostafa-Nafie/Football-Object-Detection - example of using k-means clustering
-      - Use the Simple Online and Realtime Tracking with a Deep Association Metric (Deep SORT) to improve object tracking
-      - Use the resnet training to project TV sports field images onto 2D plane to get true tracking data - https://github.com/vcg-uvic/sportsfield_release?tab=readme-ov-file
-       example usage https://github.com/vcg-uvic/sportsfield_release/blob/master/sports_field_registration.ipynb
-            OR
       
 2. Compare to tracking data from skillcorner if I can find the broadcast feeds from these matches https://github.com/SkillCorner/opendata
       3518 Inter - Juventus - https://www.youtube.com/watch?v=PEvflD64RnE
