@@ -15,6 +15,7 @@ BALL DETECTION
        https://datasciencedojo.com/blog/techniques-to-handle-imbalanced-data/
   - Homography to convert detections to real life location on pitch
                  https://ieeexplore.ieee.org/document/10053962
+       https://nihal111.github.io/hawk_eye/
           less detail xplanation but might be useful
               https://stackoverflow.com/questions/60352448/homography-from-football-soccer-field-lines
 
