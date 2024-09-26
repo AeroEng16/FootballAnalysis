@@ -14,7 +14,8 @@ BALL DETECTION
        https://arxiv.org/abs/1708.02002 - Focal loss
        https://datasciencedojo.com/blog/techniques-to-handle-imbalanced-data/
   - Homography to convert detections to real life location on pitch
-                 https://ieeexplore.ieee.org/document/10053962 - option for ball tracking that may be better than Yolo as well as source for homography
+                 https://ieeexplore.ieee.org/document/10053962
+                     - https://arxiv.org/abs/1611.08461 option for ball tracking that may be better than Yolo 
        https://nihal111.github.io/hawk_eye/
           less detail xplanation but might be useful
               https://stackoverflow.com/questions/60352448/homography-from-football-soccer-field-lines
