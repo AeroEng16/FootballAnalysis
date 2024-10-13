@@ -17,6 +17,7 @@ BALL DETECTION
                  https://ieeexplore.ieee.org/document/10053962
               Line detection = https://www.sciencedirect.com/science/article/pii/S0923596523000966
               Ball tracking - https://github.com/alanlukezic/csr-dcf?tab=readme-ov-file
+                            https://docs.opencv.org/4.10.0/d2/da2/classcv_1_1TrackerCSRT.html#details
                      - https://arxiv.org/abs/1611.08461 option for ball tracking that may be better than Yolo 
        https://nihal111.github.io/hawk_eye/
           less detail xplanation but might be useful
