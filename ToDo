@@ -1,3 +1,49 @@
+***************************
+******* Current Plan ******
+***************************
+
+ 1. Work out ball tracking
+       Combine YOLO detections and CSRT tracker for the ball using the same method as the paper 
+ 2. Homography
+       - Line detection then calc homography transform
+       - https://stackoverflow.com/questions/60352448/homography-from-football-soccer-field-lines
+       - https://www.sciencedirect.com/science/article/pii/S0923596523000966?ref=pdf_download&fr=RR-2&rr=8d5b9f600ade63ac
+3. Interpolating between known ball positions
+       - Use 2D ball location ID for frames without ball
+4. Player tracking and clustering
+       - https://github.com/Mostafa-Nafie/Football-Object-Detection
+       - https://blog.roboflow.com/track-football-players/
+              - Don't bother with GK, ref etc. just get all people and then can split detected based on k-means
+5. Converting tracking data to event data
+       - https://arxiv.org/abs/2202.00804
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1. Similar to this - https://github.com/JooZef315/football-tracking-data-from-TV-broadcast
        - Take pretrained Yolo5 and retrain on custom dataset
             - https://blog.roboflow.com/track-football-players/
