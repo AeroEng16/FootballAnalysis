@@ -14,6 +14,7 @@ https://github.com/cemunds/awesome-sports-camera-calibration?tab=readme-ov-file#
        - Line detection then calc homography transform
        - https://stackoverflow.com/questions/60352448/homography-from-football-soccer-field-lines
        - https://www.sciencedirect.com/science/article/pii/S0923596523000966?ref=pdf_download&fr=RR-2&rr=8d5b9f600ade63ac
+       - Try implementing this = https://arxiv.org/pdf/1703.01437
 3. Interpolating between known ball positions
        - Use 2D ball location ID for frames without ball
 4. Player tracking and clustering
