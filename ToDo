@@ -5,6 +5,7 @@
 https://github.com/cemunds/awesome-sports-camera-calibration?tab=readme-ov-file#datasets
 https://www.sportperformanceanalysis.com/article/automating-data-collection-and-match-analysis-from-video
 https://www.soccer-net.org/data
+https://donsetpg.github.io/blog/2020/12/24/Narya/
 ***************************
 ******* Current Plan ******
 ***************************
@@ -12,6 +13,7 @@ https://www.soccer-net.org/data
  1. Work out ball tracking
        Combine YOLO detections and CSRT tracker for the ball using the same method as the paper 
  2. Homography
+       - Ready made key point detection model (Yolo v8)
        - Line detection then calc homography transform
           - https://arxiv.org/pdf/2410.07401v1
           - https://arxiv.org/pdf/2105.04875
