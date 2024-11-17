@@ -13,17 +13,18 @@ https://donsetpg.github.io/blog/2020/12/24/Narya/
  1. Work out ball tracking
        Combine YOLO detections and CSRT tracker for the ball using the same method as the paper 
  2. Homography
-       - Ready made key point detection model (Yolo v8)
+       - Ready made key point detection model (Yolo v8) - train own at later date
        - Line detection then calc homography transform
-          - https://arxiv.org/pdf/2410.07401v1
-          - https://arxiv.org/pdf/2105.04875
-          - https://pdf.sciencedirectassets.com/271506/1-s2.0-S0957417424X0010X/1-s2.0-S0957417424010224/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEO7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQDVQTWmC5jS0rXDtPJywjx8eZwSqbUo2%2B2mntwNCxb0DQIgJa377ccFvrCYJRz4kbY2ERoTjlNH%2FRruucHH01eWntMqsgUIdxAFGgwwNTkwMDM1NDY4NjUiDH0U22C1NEXkZhvQ9iqPBRK8LM7QbHLor76cB36cikwLL4I3tsJ9jkBxeRsv2b4fAZWgR8Y%2Bo8O3O8N3vFZ8NRl6uwbp0Zov0ZJtlHalDAFlSF8uhh%2B3hz5R4Ji0oTPHPe4EArAu8G2BwWKJdyAvJOj4qgapeP5dhjtSprh6eXpuFf0C2LnCl1VslxkohskOgWIQ4rHYnSvDtldTEQCijPaU%2BbUjOT5WGo3S%2B9EeVl2wic1orvhgJep997RAEVsPWnuTipqoCYkFmPjfgN8VoBv12o8SAghZRLNReQR1Dq%2Fs90h70XppSQks8pDQreFUcNdUqVZC2ZaNhLg5UKO8p4fqsjjkRBZkBkveIBcfg3WxTklGdXSzaeGntpCy9rrIGLIXrUcxb5Wy4dpC6YbMEMz8Pca28mjm2wr%2Ff2bPtHK%2B%2BtfNSrDhoMDPZXb7%2FdtNmE%2F340cVEYbTuREFcuz46RI8XxoqTD77YTlzFS1irN5PMHOUFhzFZ3JfgsntoV%2Fyv%2BOLO9qxds790MPzyHPyhv4PL3HblAk8%2BPf%2F8dj0XxaaDXQqDtYvlDaJbEejh47VUskJPG6XhNgFP85xRQYHe5O4Vw%2FkEry12Nzbqq0%2B8194F0Qik1GAq4Sh%2F%2F4NUwHHhpJELDrdSqDys%2FRcr5bVUvRMddqekN4gMYz5ivAy%2BASwe2COtHcRl%2FryXt2jAY8FAI%2BfXuFsyuN7I4PEnEEJmdTUeq32hD6BFWCrFRu9LaEpiykjkIK7A3gN42nqOlXO8mILpTUVe1nyQvwdOB%2BSMLLP5HqJ9pxWHd%2FdTvwDFf5zQwVboCXWtU%2Bw5oWSOGcAmagdkLiutUXNhkzkXFk3uRq7eCVnQ14peY%2FAcP2ZiIlq4R6DHXN9kytEl480s38w0Mi9uQY6sQF%2FcZafp0sS4OB28FrSatOzBjhjc3S45DiE%2BS2PoCEmHBxnba%2FvOvKTgUn68y9YhwIH7wXbXZi2PMKNPH3AiiflEts8Ay59G9FphYaZMt2H7NM%2FnyPnXRGve1s3DGgcAdZeNT1vcfEy8ugdqXnOwOjLwHj6fzANGCHeRNR0B%2BwkhBhFdxIkqTH8USgT64zi9DEpwtflyCa2HlnMvyi1%2B7M%2Bm2O9Ks6TGhMhGg91yQxcrhY%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241109T141025Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY4D4LHDNN%2F20241109%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=209a9492cf516f304dcf6dec15cc455e825487482430421cae0cc633a5a19daf&hash=99ad7801073111ef818aa70ad287ca2a49248732413163cd8bc9c87d996dc65a&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0957417424010224&tid=spdf-2d8a872e-3c68-434b-9663-f02df5797e1f&sid=c34bb1ac5f30d24895290db935d7091a8756gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=05005802050a555001&rr=8dfe62da7e9952b1&cc=gb
+          - calc homography - https://statsbomb.com/articles/football/creating-better-data-how-to-map-homography/
+       
+
        - https://stackoverflow.com/questions/60352448/homography-from-football-soccer-field-lines
        - https://www.sciencedirect.com/science/article/pii/S0923596523000966?ref=pdf_download&fr=RR-2&rr=8d5b9f600ade63ac
        - Try implementing this = https://arxiv.org/pdf/1703.01437
 3. Interpolating between known ball positions
        - Use 2D ball location ID for frames without ball
 4. Player tracking and clustering
+       - Upload example data for player predictions from other laptop
        - https://github.com/Mostafa-Nafie/Football-Object-Detection
        - https://blog.roboflow.com/track-football-players/
               - Don't bother with GK, ref etc. just get all people and then can split detected based on k-means
