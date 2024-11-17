@@ -12,6 +12,7 @@ https://donsetpg.github.io/blog/2020/12/24/Narya/
 
  1. Work out ball tracking
        Combine YOLO detections and CSRT tracker for the ball using the same method as the paper 
+       Example of how to do ball tracking based on prior estimates (combine this with CSRT tracker and yolo detections) https://github.com/roboflow/sports/blob/main/sports/common/ball.py
  2. Homography
        - Ready made key point detection model (Yolo v8) - train own at later date
        - Line detection then calc homography transform
