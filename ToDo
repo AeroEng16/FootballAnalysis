@@ -14,23 +14,30 @@ https://donsetpg.github.io/blog/2020/12/24/Narya/
  1. Work out ball tracking
        Combine YOLO detections and CSRT tracker for the ball using the same method as the paper 
        Example of how to do ball tracking based on prior estimates (combine this with CSRT tracker and yolo detections) https://github.com/roboflow/sports/blob/main/sports/common/ball.py
- 2. Homography
+ 2. Homography - DONE WITH PRETRAINED KEYPOINT DETECTION MODEL PLUS CV2 HOMOGRAPHY
        - Ready made key point detection model (Yolo v8) - train own at later date
        - Line detection then calc homography transform
           - calc homography - https://statsbomb.com/articles/football/creating-better-data-how-to-map-homography/
-       
-
        - https://stackoverflow.com/questions/60352448/homography-from-football-soccer-field-lines
        - https://www.sciencedirect.com/science/article/pii/S0923596523000966?ref=pdf_download&fr=RR-2&rr=8d5b9f600ade63ac
        - Try implementing this = https://arxiv.org/pdf/1703.01437
 3. Interpolating between known ball positions
        - Use 2D ball location ID for frames without ball
-4. Player tracking and clustering
+4. Player tracking and clustering - DONE WITH PRETRAINED MODEL AND KMEANS CLUSTERING
        - Upload example data for player predictions from other laptop
        - https://github.com/Mostafa-Nafie/Football-Object-Detection
        - https://blog.roboflow.com/track-football-players/
               - Don't bother with GK, ref etc. just get all people and then can split detected based on k-means
 5. Converting tracking data to event data
        - https://arxiv.org/abs/2202.00804
+6. Compare to tracking data from skillcorner if I can find the broadcast feeds from these matches https://github.com/SkillCorner/opendata
+      3518 Inter - Juventus - https://www.youtube.com/watch?v=PEvflD64RnE
+      3442 - Barca - Real - https://www.youtube.com/watch?v=XlQe5-zb3dY&list=PLKj1QUtwqLN9FO6P8yIWMxACN3mnHDM6a&index=12
+      2841 - Barca - Real - https://www.youtube.com/watch?v=YjeWm5_HOx8&list=PLKj1QUtwqLN9FO6P8yIWMxACN3mnHDM6a&index=24
 
+Look at various metrics through here for examples to look at once the event + tracking data is available
+
+Inspiration - https://www.youtube.com/watch?v=yncU9F_FK8Y&t=1973s
+Metric ideas - https://www.laliga.com/en-ES/beyondstats/season/2023-2024/gameweek/37#Metricof%20the%20week
+xG model -https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2021.624475/full
 
