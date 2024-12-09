@@ -17,12 +17,18 @@ https://donsetpg.github.io/blog/2020/12/24/Narya/
        Combine YOLO detections and CSRT tracker for the ball using the same method as the paper 
        Example of how to do ball tracking based on prior estimates (combine this with CSRT tracker and yolo detections) https://github.com/roboflow/sports/blob/main/sports/common/ball.py
  2. Homography - DONE WITH PRETRAINED KEYPOINT DETECTION MODEL PLUS CV2 HOMOGRAPHY
-       - Ready made key point detection model (Yolo v8) - train own at later date
        - Line detection then calc homography transform
           - calc homography - https://statsbomb.com/articles/football/creating-better-data-how-to-map-homography/
        - https://stackoverflow.com/questions/60352448/homography-from-football-soccer-field-lines
        - https://www.sciencedirect.com/science/article/pii/S0923596523000966?ref=pdf_download&fr=RR-2&rr=8d5b9f600ade63ac
        - Try implementing this = https://arxiv.org/pdf/1703.01437
+ 2a Homography using line detection and dictionary of examples then k NN clustering 
+    - BoVW and SIFT to classify frames into 5 groups - top broadcast, top zoom in broadcast, bottom broadcast, bottom zoom broadcast and others
+         and only used first category
+    - Edge detection using canny, something like this: https://stackoverflow.com/questions/77197045/how-to-detect-ellipses-on-a-real-image
+    - Ignore lines with detected bounding boxes of players or the balls
+    - Implement HOG as per paper to find closest matches
+    - Try implementing Markov random field optimisation to aid temporal variation
 3. Interpolating between known ball positions
        - Use 2D ball location ID for frames without ball
 4. Player tracking and clustering - DONE WITH PRETRAINED MODEL AND KMEANS CLUSTERING
